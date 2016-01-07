@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.0" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="(No Menu)"/>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-56,0,0,1,44"/>
+    <SyntheticProperty name="formPosition" type="java.awt.Point" value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,80,111,105,110,116,-74,-60,-118,114,52,126,-56,38,2,0,2,73,0,1,120,73,0,1,121,120,112,0,0,0,0,0,0,0,0"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="2"/>
+    <SyntheticProperty name="generatePosition" type="boolean" value="true"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="UTF-8"/>
+  </SyntheticProperties>
+
+  <Events>
+    <EventHandler event="windowClosing" handler="exitForm"/>
+  </Events>
+
+  <AuxValues>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Client Connection Panel"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="100" width="340" x="10" y="50"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="jlocalhostname">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="localhost"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="190" x="70" y="470"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jlocalport">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="8000"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="50" x="960" y="330"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jpeerhostname">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="ieugp11"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jpeerhostnameActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="160" x="120" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jpeerport">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="8000"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="40" x="280" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jRefreshInterval">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="100"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jTextField5ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="80" x="930" y="230"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jPacketSize">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="10240"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="80" x="120" y="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jSendRate">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="10240"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="80" x="940" y="250"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jPacketno">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="80" x="920" y="340"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Hostname"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="920" y="440"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel12">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Port"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="960" y="280"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel13">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Local:"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="0" y="-150"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="location : port"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel15">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Refresh Interval (ms):"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="920" y="230"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel16">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Packet Size (Bytes):"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="40"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel17">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Sending Rate (Bps):"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="940" y="250"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel18">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="# Packets to Send:"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="10" width="-1" x="920" y="360"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jTCP">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="TCP"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jTCPActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="120" y="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jUDP">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="UDP"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="190" y="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel19">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Protocol"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="30" width="60" x="20" y="60"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jFile">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Save File "/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jCheckBox1ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="860" y="280"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel20">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Type"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="960" y="410"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jStream">
+          <Properties>
+            <Property name="label" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Stream"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Stream File"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jStreamActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="950" y="310"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Statistics Display Panel"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="160" width="380" x="10" y="580"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="rows" type="int" value="5"/>
+        <Property name="columns" type="int" value="2"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Data Transfer Rate:"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jDataRate">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0 Bps"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Packet Loss (%)"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLossPercentage">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0 %"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="# Packets Transferred:"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jPacketTransferred">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="# Packets Lost:"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jPacketLost">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Time Elapsed:"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jTimeElapsed">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="0.0 s"/>
+          </Properties>
+          <Constraints>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jSend">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Send"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="actionPerformed" handler="jButton1ActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="30" width="110" x="950" y="410"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="jReceive">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Receive"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="actionPerformed" handler="jReceiveActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="30" width="110" x="970" y="370"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="jPlayback">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Playback"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="actionPerformed" handler="jHostInfoActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="30" width="110" x="960" y="420"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="jQuit">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Quit"/>
+      </Properties>
+
+      <Events>
+        <EventHandler event="actionPerformed" handler="jButton4ActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="20" width="110" x="10" y="340"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel4">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="File Panel"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="190" width="340" x="10" y="150"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jRequestFS">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="File Streaming"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="50"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jFilePath">
+          <Properties>
+            <Property name="editable" type="boolean" editor="sun.beans.editors.BoolEditor" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="130" x="90" y="80"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jSaveAs">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Save As"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jSaveAsActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="90" x="220" y="80"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jStreamPath">
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jStreamPathActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="130" x="90" y="50"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Playback file"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="130"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jStreamPlay">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Stream"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jStreamPlayActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="90" x="220" y="50"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jFilePath2">
+          <Properties>
+            <Property name="editable" type="boolean" editor="sun.beans.editors.BoolEditor" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="130" x="90" y="130"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="OPTIONS"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jS">
+          <Properties>
+            <Property name="selected" type="boolean" editor="sun.beans.editors.BoolEditor" value="true"/>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Stream"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jSActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="70" x="90" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jP">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Playback"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jPActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="70" x="160" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jD">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Download"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jDActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="80" x="240" y="20"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Download File"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="-1" width="-1" x="10" y="80"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jPlayback2">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Playback"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButton1ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="90" x="220" y="150"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jDownload">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Download"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButton2ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="90" x="220" y="100"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jBrowse">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Browse"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButton3ActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints height="20" width="90" x="220" y="130"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Java Media Player"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="30" style="3"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="-1" width="-1" x="20" y="0"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.beaninfo.editors.StringEditor" value="Playing ... "/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="33" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="48" style="1"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints height="-1" width="-1" x="440" y="150"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
